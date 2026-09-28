@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Media</title>
+</head>
+<body>
+
+<h2>Menu Media</h2>
+
+<button onclick="show('gambar')">Gambar</button>
+<button onclick="show('audio')">Audio</button>
+<button onclick="show('video')">Video</button>
+
+<div id="gambar">
+    <img src="neonmvp.png" width="400">
+</div>
+
+<div id="audio" style="display:none">
+    <audio controls>
+        <source src="Alan Walker - Sing Me To Sleep.m4a" type="audio/mp4">
+    </audio>
+</div>
+
+<div id="video" style="display:none">
+    <video width="400" controls>
+        <source src="Alan Walker - Sing Me To Sleep.mp4" type="video/mp4">
+    </video>
+</div>
+
+<script>
+function show(id) {
+    document.getElementById("gambar").style.display = "none";
+    document.getElementById("audio").style.display = "none";
+    document.getElementById("video").style.display = "none";
+    document.getElementById(id).style.display = "block";
+}
+</script>
+
+</body>
+</html>
